@@ -41,6 +41,7 @@ body {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  border-radius: 10px;
 
   /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
   -webkit-transform-origin: 50% 50%;
@@ -113,6 +114,7 @@ body {
     right: 1em;
     height:95%;
     z-index: 100;
+    border-radius: 10px;
 
 }
 
