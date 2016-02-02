@@ -4,8 +4,9 @@ var i18n_dict = {
                 "requires_JSON"            : "Annotator requires a JSON implementation: have you included lib/vendor/json2.js?",
                 "Cancel"                   : "Cancel",
                 "Save"                     : "Save",
-                "view_annotation"          : "Allow anyone to <strong>view</strong> this annotation",
-                "edit_annotation"          : "Allow anyone to <strong>edit</strong> this annotation",
+                //took out allowing anyone to view or edit annotation
+                "view_annotation"          : "",
+                "edit_annotation"          : "",
                 "No Comment"               : "No Comment",
                 "Summary"                  : "Summary",
                 "view_annotations"         : "",
