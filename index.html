@@ -19,13 +19,14 @@
    </head>
      <body>
       <div class="container" id="container">
-               <div id="content">
+
 
                   <div class="row-fluid"><h1>Frankenstein or The Modern Prometheus</h1>
                      <h2 class="titol-seccio" id="d22e126">
                         <h2 class="titol-seccio" id="w24ab1b3b5">Chapter 1 </h2>
                      </h2>
                      <div class="row-fluid">
+                      <div id="content">
                         <div>
 
                            <div class="para" id="w24ab1b3b5b5">I am by birth a Genevese, and my family is one of the most distinguished of that republic. My ancestors had been for many years counsellors and syndics, and my father had filled several public situations with honour and reputation. He was respected by all who knew him for his integrity and indefatigable attention to public business. He passed his younger days perpetually occupied by the affairs of his country; a variety of circumstances had prevented his marrying early, nor was it until the decline of life that he became a husband and the father of a family.
@@ -61,7 +62,9 @@
           <script src="src/view_annotator.js"></script>
           <script src="src/categories.js"></script>
                <script>
+
                    jQuery(function ($) {
+
                       $.i18n.load(i18n_dict);
                    // Customise the default plugin options with the third argument.
                     var annotator = $('body').annotator().annotator().data('annotator');
@@ -77,6 +80,8 @@
                         showViewPermissionsCheckbox: true,
                         showEditPermissionsCheckbox: false
                     });
+
+
                   $('body').annotator().annotator('addPlugin', 'AnnotatorViewer');
                   $('body').annotator().annotator("addPlugin", "Touch");
                   $('body').annotator().annotator('addPlugin', 'Categories',{
@@ -97,19 +102,36 @@
                     }
                     });
 
-                  // $('anotacions-uoc-panel').annotator().annotator("addPlugin", "Offline", {
-                  //   online: function (plugin) {
-                  //     // Do something when the browser is online.
-                  //   },
-                  //   offline: function (plugin) {
-                  //     // Do something when the browser goes offline.
-                  //   }
-                  //   });
-
-
                });
 
 
                </script>
     </body>
 </html>
+
+
+<!--                     var pinkHighlight = document.getElementsByClassName("annotator-hl-errata");
+                    try{
+                      localStorage.setItem("annotator-hl-errata", pinkHighlight.id)
+                    }
+                    catch (e) {
+                      if (e == QUOTA_EXCEEDED_ERR) {
+                          console.log("Error: Local Storage limit exceeds.");
+                      }
+                      else {
+                          console.log("Error: Saving to local storage.");
+                      }
+                    }
+                    pinkHighlight.id = localStorage.getItem("annotator-hl-errata"); -->
+<!--
+                    // var highlightedStuff = document.querySelector('.annotator-hl-errata');
+
+                    // setInterval(function() {
+                    //     localStorage.setItem('autosave', highlightedStuff.id);
+                    // }, 1000);
+
+                    // if (localStorage.getItem('autosave')) {
+
+                    //   // Retrieve the item
+                    //   highlightedStuff.id = localStorage.getItem('autosave');
+                    // } -->
